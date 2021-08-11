@@ -29,6 +29,6 @@ setup(
         "scikit-image",
         "opencv-python",
         "numpy",
-        "faim-sl"
+        "git+ssh://git@github.com/fmi-faim/faim-sl.git@main#egg=faim_sl"
     ]
 )
