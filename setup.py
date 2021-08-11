@@ -24,7 +24,7 @@ setup(
     python_requires=">=3.6",
 
     install_requires=[
-        "sciluigi @ git+ssh://git@github.com/fmi-faim/sciluigi@master#egg=sciluigi",
+        "sciluigi @ git+ssh://git@github.com/fmi-faim/sciluigi.git@master#egg=sciluigi",
         "luigi",
         "scikit-image",
         "opencv-python",
