@@ -1,13 +1,11 @@
-import luigi
-import sciluigi as sl
-
 from glob import glob
 from os.path import join
 
-from faim_sl.BatchTargetInfo import BatchTargetInfo
+import luigi
+import sciluigi as sl
+
 
 class BatchRawData(sl.ExternalTask):
-
     dir = luigi.Parameter()
     pattern = luigi.Parameter()
     recursive = luigi.BoolParameter(default=False)

@@ -8,7 +8,7 @@ setup(
     version="0.0.1",
     author="Tim-Oliver Buchholz",
     author_email="tim-oliver.buchholz@fmi.ch",
-    description="A collection of sci:luigi tasks used at FMI.",
+    description="A collection of sci:luigi tasks used in FAIM at FMI.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/fmi-faim/faim-sl-tasks",

@@ -1,13 +1,11 @@
-import sciluigi as sl
 import luigi
-from faim_sl.Parameters import IntListParameter
-
+from skimage.io import imsave
 from skimage.measure import block_reduce
-from skimage.io import imread, imsave
-import numpy as np
 
 from faim_sl.MultiFileTask import MultiFileTask
+from faim_sl.Parameters import IntListParameter
 
+import numpy as np
 
 class BlockReduceTask(MultiFileTask):
     """
@@ -31,4 +29,4 @@ class BlockReduceTask(MultiFileTask):
 
     @staticmethod
     def compute(img, factors, reduce_function):
-        return block_reduce(img, factors, func=eval(reduce_function)).astype(np.uint16)
+        return block_reduce(img, factors, func=eval(reduce_function)).astype(img.dtype)

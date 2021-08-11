@@ -1,6 +1,5 @@
-import luigi
-
 import cv2 as cv
+import luigi
 
 from faim_sl.MultiFileTask import MultiFileTask
 
@@ -25,6 +24,13 @@ class GaussianFilterApproximationTask(MultiFileTask):
 
     @staticmethod
     def compute(img, ksize):
+        """
+        Apply box-filter three times as approximation of a Gaussian filter.
+
+        :param img: to filter
+        :param ksize: of the box filter
+        :return: filtered image
+        """
         img = cv.boxFilter(img, -1, (ksize, ksize))
         img = cv.boxFilter(img, -1, (ksize, ksize))
         return cv.boxFilter(img, -1, (ksize, ksize))

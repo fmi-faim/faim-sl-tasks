@@ -1,12 +1,11 @@
 import luigi
 import numpy as np
-import sciluigi as sl
-from faim_sl.MultiFileTask import MultiFileTask
 
+from faim_sl.MultiFileTask import MultiFileTask
 from faim_sl.Parameters import SliceParameter
 
-class SliceTask(MultiFileTask):
 
+class SliceTask(MultiFileTask):
     slice = SliceParameter(default="0:1")
     axis = luigi.IntParameter(default=-1)
 
