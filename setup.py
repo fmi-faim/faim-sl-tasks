@@ -24,11 +24,11 @@ setup(
     python_requires=">=3.6",
 
     install_requires=[
-        "git+ssh://git@github.com/fmi-faim/sciluigi@master#egg=sciluigi",
+        "sciluigi @ git+ssh://git@github.com/fmi-faim/sciluigi@master#egg=sciluigi",
         "luigi",
         "scikit-image",
         "opencv-python",
         "numpy",
-        "git+ssh://git@github.com/fmi-faim/faim-sl.git@main#egg=faim_sl"
+        "faim-sl @ git+ssh://git@github.com/fmi-faim/faim-sl.git@main#egg=faim_sl"
     ]
 )
