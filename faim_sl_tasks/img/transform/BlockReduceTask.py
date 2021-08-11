@@ -7,6 +7,7 @@ from faim_sl.Parameters import IntListParameter
 
 import numpy as np
 
+
 class BlockReduceTask(MultiFileTask):
     """
     Down sample an image.
