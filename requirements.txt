@@ -1,5 +1,5 @@
-git+ssh://git@github.com/fmi-faim/faim-sl.git@main#egg=faim_sl
+git+https://git@github.com/fmi-faim/faim-sl.git@main#egg=faim_sl
 luigi
 opencv-python
 scikit-image
-git+ssh://git@github.com/fmi-faim/sciluigi.git@master#egg=sciluigi
+git+https://git@github.com/fmi-faim/sciluigi.git@master#egg=sciluigi
